@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +9,7 @@
       name="description"
       content="Información sobre eliminación de datos y solicitudes de privacidad en Previa+."
     />
+
     <meta name="theme-color" content="#0F0F14" />
     <meta name="robots" content="index, follow" />
 
@@ -22,15 +24,12 @@
 
       <header class="site-header">
         <h1 class="logo">Previa+</h1>
-
         <p class="subtitle">Eliminación de datos</p>
-
-        <p class="update-date">Última actualización: 19 de agosto de 2026</p>
+        <p class="update-date">Última actualización: 24 de agosto de 2026</p>
       </header>
 
       <main class="main-content">
         <!-- 1. SOBRE LAS CUENTAS DE USUARIO -->
-
         <section class="section">
           <h2 class="section-title">1. Sobre las cuentas de usuario</h2>
 
@@ -43,21 +42,20 @@
 
             <p>
               La Aplicación no ofrece funciones de registro o inicio de sesión
-              ni mantiene perfiles personales de usuarios.
+              ni mantiene perfiles personales de sus usuarios.
             </p>
           </div>
         </section>
 
         <!-- 2. DATOS ALMACENADOS LOCALMENTE -->
-
         <section class="section">
           <h2 class="section-title">2. Datos almacenados localmente</h2>
 
           <div class="section-content">
             <p>
               Previa+ puede almacenar determinadas preferencias y estados
-              técnicos directamente en el dispositivo mediante
-              <strong>AsyncStorage</strong>. Entre ellos pueden encontrarse:
+              técnicos directamente en el dispositivo mediante almacenamiento
+              local. Entre ellos pueden encontrarse:
             </p>
 
             <ul>
@@ -65,22 +63,23 @@
               <li>Preferencias de vibración.</li>
               <li>Preferencia de mantener la pantalla encendida.</li>
               <li>
-                Estado técnico relacionado con solicitudes de valoración de la
-                Aplicación.
+                Estado técnico relacionado con la presentación de solicitudes de
+                valoración de la Aplicación.
               </li>
             </ul>
 
             <p>
-              Estos datos no constituyen una cuenta personal y pueden eliminarse
-              de las siguientes formas:
+              Estos datos no constituyen una cuenta ni un perfil personal y
+              pueden eliminarse de las siguientes formas:
             </p>
 
             <ul>
               <li>Desinstalando Previa+ del dispositivo.</li>
+
               <li>
-                Desde los ajustes de Android: <strong>Aplicaciones</strong> →
-                <strong>Previa+</strong> → <strong>Almacenamiento</strong> →
-                <strong>Borrar datos</strong>.
+                Desde los ajustes de Android:
+                <strong>Aplicaciones</strong> → <strong>Previa+</strong> →
+                <strong>Almacenamiento</strong> → <strong>Borrar datos</strong>.
               </li>
             </ul>
 
@@ -88,41 +87,91 @@
               La ubicación exacta de estas opciones puede variar según el
               fabricante y la versión de Android.
             </p>
+
+            <p>
+              Borrar los datos locales o desinstalar la Aplicación elimina las
+              preferencias almacenadas en el dispositivo. Esta acción no
+              necesariamente elimina de forma retroactiva los eventos de uso que
+              Firebase Analytics ya haya recibido y procesado.
+            </p>
           </div>
         </section>
 
-        <!-- 3. DATOS DE ANALYTICS -->
-
+        <!-- 3. DATOS DE FIREBASE ANALYTICS -->
         <section class="section">
-          <h2 class="section-title">3. Datos de Analytics</h2>
+          <h2 class="section-title">3. Datos de Firebase Analytics</h2>
 
           <div class="section-content">
             <p>
-              Previa+ utiliza <strong>Firebase Analytics</strong> para obtener
-              estadísticas de uso y comprender cómo se utilizan sus funciones.
+              Previa+ utiliza <strong>Firebase Analytics</strong>, un servicio
+              proporcionado por Google, para obtener estadísticas generales,
+              comprender cómo se utilizan sus funciones y mejorar la estabilidad
+              y experiencia de la Aplicación.
             </p>
 
             <p>
-              Según la configuración del servicio y de la Aplicación, esto puede
-              incluir:
+              Dependiendo de las acciones realizadas dentro de Previa+, los
+              datos analíticos pueden incluir:
             </p>
 
             <ul>
-              <li>Eventos de uso.</li>
-              <li>Interacción con funciones.</li>
-              <li>Información técnica del dispositivo.</li>
-              <li>Identificadores técnicos o seudónimos.</li>
+              <li>Pantallas visitadas dentro de la Aplicación.</li>
+              <li>Juegos y categorías seleccionados.</li>
+              <li>Inicio, avance y finalización de partidas o rondas.</li>
+              <li>Cantidad de cartas o preguntas vistas.</li>
+              <li>Duración aproximada de una partida.</li>
+
+              <li>
+                Resultado correcto o incorrecto de una respuesta en juegos de
+                trivia, sin enviar el texto de la pregunta ni de la respuesta.
+              </li>
+
+              <li>
+                Cambios en preferencias como sonido, vibración o mantener la
+                pantalla encendida.
+              </li>
+
+              <li>
+                Uso de funciones para compartir, puntuar la Aplicación o visitar
+                sus redes sociales.
+              </li>
+
+              <li>
+                Identificadores internos de juegos, categorías, etapas o casos.
+              </li>
+
+              <li>
+                Información técnica básica de la Aplicación, la instalación y el
+                dispositivo.
+              </li>
+
+              <li>
+                Eventos y propiedades recopilados automáticamente por Firebase
+                Analytics.
+              </li>
+
+              <li>
+                Identificadores técnicos o seudónimos asociados a una
+                instalación.
+              </li>
             </ul>
 
             <p>
-              Estos datos pueden ser gestionados por Google mediante Firebase
-              Analytics y no forman parte de una cuenta personal de Previa+.
+              Previa+ no utiliza Firebase Analytics para enviar nombres de
+              jugadores, correos electrónicos, preguntas completas, respuestas
+              textuales, confesiones, mensajes escritos por el usuario,
+              fotografías, grabaciones de audio, contactos ni ubicación precisa.
+            </p>
+
+            <p>
+              Estos datos no forman parte de una cuenta personal de Previa+. Son
+              procesados mediante Firebase Analytics y pueden estar asociados a
+              identificadores técnicos o seudónimos generados por el servicio.
             </p>
           </div>
         </section>
 
         <!-- 4. SOLICITUD DE ELIMINACIÓN O GESTIÓN -->
-
         <section class="section">
           <h2 class="section-title">
             4. Cómo solicitar la eliminación o gestión de datos
@@ -130,34 +179,41 @@
 
           <div class="section-content">
             <p>
-              Para solicitar la eliminación o gestión de información que pueda
-              estar relacionada con el uso de Previa+, puedes escribir a:
+              Para realizar una consulta o solicitar la gestión de información
+              que pueda estar relacionada con el uso de Previa+, puedes escribir
+              a:
             </p>
 
             <p>
               <strong>Correo electrónico:</strong>
+
               <a href="mailto:contact.previaplus@gmail.com">
                 contact.previaplus@gmail.com
               </a>
             </p>
 
             <p>
-              En caso necesario, podremos solicitar información adicional
-              razonable para intentar identificar la información
-              correspondiente. Las solicitudes serán evaluadas de acuerdo con la
-              información que pueda identificarse y con las obligaciones legales
-              aplicables.
-            </p>
-            <p>
               Puedes indicar en tu mensaje si deseas solicitar acceso,
               corrección, eliminación u otra gestión relacionada con la
               información asociada al uso de Previa+.
+            </p>
+
+            <p>
+              En caso necesario, podremos solicitar información adicional
+              razonable para comprender y gestionar la solicitud. No solicites
+              contraseñas, documentos de identidad ni información sensible que
+              no sea necesaria para explicar tu consulta.
+            </p>
+
+            <p>
+              Las solicitudes serán evaluadas según la información que pueda
+              identificarse, las capacidades técnicas disponibles y las
+              obligaciones legales aplicables.
             </p>
           </div>
         </section>
 
         <!-- 5. LIMITACIONES DE IDENTIFICACIÓN -->
-
         <section class="section">
           <h2 class="section-title">
             5. Limitaciones de identificación de datos
@@ -166,16 +222,27 @@
           <div class="section-content">
             <p>
               Previa+ no mantiene una base de datos propia de cuentas o perfiles
-              personales.
+              personales y no asigna a sus usuarios una identidad personal
+              dentro de la Aplicación.
             </p>
 
             <p>
-              Por ello, determinados datos seudónimos o técnicos gestionados por
-              servicios de terceros puede que no sea posible vincularlos
-              directamente con una persona concreta. En consecuencia, puede no
-              ser posible identificar o eliminar de forma individual
-              determinados datos gestionados por terceros, como los datos de
-              Firebase Analytics.
+              Los eventos gestionados mediante Firebase Analytics pueden estar
+              asociados a identificadores técnicos o seudónimos que no permiten
+              a Previa+ identificar directamente a una persona concreta.
+            </p>
+
+            <p>
+              Debido a esta limitación, puede no ser técnicamente posible
+              localizar o eliminar individualmente determinados eventos
+              analíticos ya procesados cuando no puedan vincularse de forma
+              verificable con la persona que realiza la solicitud.
+            </p>
+
+            <p>
+              No se combinarán datos con el único propósito de intentar
+              identificar personalmente a un usuario que previamente no era
+              identificable.
             </p>
 
             <p>
@@ -187,14 +254,14 @@
         </section>
 
         <!-- 6. SERVICIOS DE TERCEROS -->
-
         <section class="section">
           <h2 class="section-title">6. Servicios de terceros</h2>
 
           <div class="section-content">
             <p>
-              Para obtener información sobre datos gestionados por Google y
-              Firebase, consulta también:
+              Firebase Analytics es proporcionado por Google. Para obtener más
+              información sobre el tratamiento y la protección de datos por
+              parte de Google y Firebase, consulta:
             </p>
 
             <ul>
@@ -207,13 +274,14 @@
                   Política de Privacidad de Google
                 </a>
               </li>
+
               <li>
                 <a
                   href="https://firebase.google.com/support/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Documentación de privacidad de Firebase
+                  Privacidad y seguridad en Firebase
                 </a>
               </li>
             </ul>
@@ -221,7 +289,6 @@
         </section>
 
         <!-- 7. CONTACTO -->
-
         <section class="section">
           <h2 class="section-title">7. Contacto</h2>
 
@@ -233,6 +300,7 @@
 
             <p>
               <strong>Correo electrónico:</strong>
+
               <a href="mailto:contact.previaplus@gmail.com">
                 contact.previaplus@gmail.com
               </a>
@@ -245,14 +313,14 @@
         <p>&copy; 2026 Previa+. Todos los derechos reservados.</p>
 
         <p>
-          Previa+ es desarrollada y operada por Alonso Benjamín Garcia Espinoza,
-          bajo el nombre comercial "Wuanpack Corp."
+          Previa+ es desarrollada y operada por Alonso Benjamín García Espinoza,
+          bajo el nombre comercial “Wuanpack Corp.”
         </p>
 
         <p>
           Para efectos de esta página, el responsable de la información
           relacionada con Previa+ es
-          <strong>Alonso Benjamín Garcia Espinoza</strong>.
+          <strong>Alonso Benjamín García Espinoza</strong>.
         </p>
 
         <p style="margin-top: 0.5rem">
